@@ -2,11 +2,9 @@ version: '3'
 
 services:
   mail:
-    image: postfix
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: catatnight/postfix
     env_file:
       - .env
     ports:
       - 25:25
+    container_name: postfix
