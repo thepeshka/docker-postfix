@@ -2,7 +2,9 @@ import configparser
 import sys
 
 config = configparser.ConfigParser()
+config['MAIN'] = {}
 config['MAIN']['domain'] = sys.argv[1]
+config['USERS'] = {}
 i = 2
 while sys.argv[i]:
     config['USERS'][sys.argv[i]] = sys.argv[i+1]
