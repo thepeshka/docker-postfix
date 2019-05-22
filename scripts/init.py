@@ -15,4 +15,4 @@ with open('settings.ini', 'w+') as configfile:
     
 users = ",".join([f"{username}:{config['USERS'][username]}" for username in config['USERS']])
 with open('.env', 'w') as envfile:
-    envfile.write([f'maildomain={domain}\nsmtp_user={users}'])
+    envfile.write(f'maildomain={domain}\nsmtp_user={users}')
