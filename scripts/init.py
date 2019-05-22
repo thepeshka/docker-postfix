@@ -6,7 +6,7 @@ config['MAIN'] = {}
 config['MAIN']['domain'] = sys.argv[1]
 config['USERS'] = {}
 i = 2
-while sys.argv[i]:
+while i < len(sys.argv):
     config['USERS'][sys.argv[i]] = sys.argv[i+1]
     i += 2
 with open('settings.ini', 'w+') as configfile:
