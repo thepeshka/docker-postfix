@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -x
 #judgement
 if [[ -a /etc/supervisor/conf.d/supervisord.conf ]]; then
   exit 0
