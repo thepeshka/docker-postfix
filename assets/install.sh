@@ -12,9 +12,17 @@ nodaemon=true
 
 [program:postfix]
 command=/opt/postfix.sh
+stdout_logfile=/dev/stdout
+stdout_logfile_maxbytes=0
+stderr_logfile=/dev/stderr
+stderr_logfile_maxbytes=0
 
 [program:rsyslog]
 command=/usr/sbin/rsyslogd -n -c3
+stdout_logfile=/dev/stdout
+stdout_logfile_maxbytes=0
+stderr_logfile=/dev/stderr
+stderr_logfile_maxbytes=0
 EOF
 
 ############
