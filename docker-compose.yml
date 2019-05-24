@@ -6,5 +6,5 @@ services:
     env_file:
       - .env
     ports:
-      - 25:25
+      - "25:25"
     container_name: postfix
