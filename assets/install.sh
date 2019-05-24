@@ -18,7 +18,7 @@ stderr_logfile=/dev/stderr
 stderr_logfile_maxbytes=0
 
 [program:rsyslog]
-command=/usr/sbin/rsyslogd -n -c3
+command=/usr/sbin/rsyslogd -n
 stdout_logfile=/dev/stdout
 stdout_logfile_maxbytes=0
 stderr_logfile=/dev/stderr
