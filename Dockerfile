@@ -1,4 +1,4 @@
-From ubuntu:trusty
+From raspbian/stretch:latest
 MAINTAINER Elliott Ye
 
 # Set noninteractive mode for apt-get
